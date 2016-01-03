@@ -1,0 +1,48 @@
+$text: "Century Gothic";
+$title-color: #1968fd;
+$header: #518cfc;
+
+html{
+    margin: 0;
+    padding: 0;
+    } 
+body{
+    font-family: $text;
+    }
+#loader-small {
+    display: none;
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #fd1933;
+    width: 30px;
+    height: 30px;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    
+    -widget-animation: spin 1s linear infinite; 
+    animation: spin 1s linear infinite; 
+    }
+#loader-big {
+    display: none;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #1968fd;
+    width: 80px;
+    height: 80px;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    
+    -widget-animation: spin 1s linear infinite; 
+    animation: spin 1s linear infinite; 
+    }
+
+@-widget-keyframes spin{
+     0% {-widget-transform: rotate(0deg);}
+    100% {-widget-transform: rotate(360deg);}
+    }
+@keyframes spin{
+     0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+    }

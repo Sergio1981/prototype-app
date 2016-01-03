@@ -1,2 +1,52 @@
+/* line 5, C:/Users/SEVEN/Desktop/Anonymous/Desenvolvedor/Projetos/protype/assets/css/style.scss */
+html {
+  margin: 0;
+  padding: 0; }
+
+/* line 9, C:/Users/SEVEN/Desktop/Anonymous/Desenvolvedor/Projetos/protype/assets/css/style.scss */
+body {
+  font-family: "Century Gothic"; }
+
+/* line 12, C:/Users/SEVEN/Desktop/Anonymous/Desenvolvedor/Projetos/protype/assets/css/style.scss */
+#loader-small {
+  display: none;
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #fd1933;
+  width: 30px;
+  height: 30px;
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  -widget-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite; }
+
+/* line 26, C:/Users/SEVEN/Desktop/Anonymous/Desenvolvedor/Projetos/protype/assets/css/style.scss */
+#loader-big {
+  display: none;
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #1968fd;
+  width: 80px;
+  height: 80px;
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  -widget-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite; }
+
+@-widget-keyframes spin {
+  /* line 42, C:/Users/SEVEN/Desktop/Anonymous/Desenvolvedor/Projetos/protype/assets/css/style.scss */
+  0% {
+    -widget-transform: rotate(0deg); }
+  /* line 43, C:/Users/SEVEN/Desktop/Anonymous/Desenvolvedor/Projetos/protype/assets/css/style.scss */
+  100% {
+    -widget-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=style.css.map */
