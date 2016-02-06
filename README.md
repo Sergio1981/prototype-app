@@ -1,5 +1,6 @@
 Author: Sergio Costa
 Project: App hibrido
+Version: 0.0.1
 
 Este projeto foi desenvolvido para testar as tecnologias do git e de como pode ser desenvolvido via brakets e adicionado ao Intel xdk.
 

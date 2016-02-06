@@ -49,4 +49,37 @@ body {
   100% {
     transform: rotate(360deg); } }
 
+/* line 50, C:/Users/SEVEN/Desktop/Anonymous/Desenvolvedor/Projetos/protype/assets/css/style.scss */
+#envia {
+  background-color: #eb3737;
+  border: 1px solid #eb3737;
+  border-radius: 50%;
+  padding: 10px 10px;
+  border-style: none;
+  color: #ffffff;
+  width: 50px;
+  height: auto;
+  text-align: center;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer; }
+
+/* line 63, C:/Users/SEVEN/Desktop/Anonymous/Desenvolvedor/Projetos/protype/assets/css/style.scss */
+button {
+  width: auto; }
+
+/* line 67, C:/Users/SEVEN/Desktop/Anonymous/Desenvolvedor/Projetos/protype/assets/css/style.scss */
+h1 {
+  font-size: 3em;
+  color: #518cfc;
+  font-style: italic; }
+
+/* line 72, C:/Users/SEVEN/Desktop/Anonymous/Desenvolvedor/Projetos/protype/assets/css/style.scss */
+.name {
+  color: #1968fd;
+  font-size: 2em; }
+
+/* line 76, C:/Users/SEVEN/Desktop/Anonymous/Desenvolvedor/Projetos/protype/assets/css/style.scss */
+.container ul li {
+  list-style: none; }
+
 /*# sourceMappingURL=style.css.map */

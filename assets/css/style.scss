@@ -46,3 +46,33 @@ body{
      0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
     }
+
+#envia{
+    background-color: #eb3737;
+    border: 1px solid #eb3737;
+    border-radius: 50%;
+    padding: 10px 10px;
+    border-style: none;
+    color: #ffffff;
+    width: 50px;
+    height: auto;
+    text-align: center;
+    box-shadow: 1px 5px 15px rgba(0,0,0,.4);
+    cursor: pointer;
+}
+button{
+    width: auto;
+}
+
+h1{
+    font-size: 3em;
+    color: #518cfc;
+    font-style: italic;
+}
+.name{
+    color: #1968fd;
+    font-size: 2em;
+}
+.container ul li {
+    list-style: none;
+}

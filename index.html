@@ -1,18 +1,80 @@
-<head>
-  
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+<html>
+    <head>
 
-<body>
-    <div id="loader-big" style="display: none;"></div>
-    <div id="loader-small" style="display: none;"></div>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="lib/angular/angular.min.js"></script>
+        
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="lib/Materialize/bin/materialize.css">
 
-    <button id="envia">Enviar</button>
+          <!-- Compiled and minified JavaScript -->
+        <script src="lib/Materialize/bin/materialize.js"></script>
+        <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
 
-    <script src="js/app.js"></script>
+    </head>
+
+    <body ng-app="app">
+
+        <div class="main" ng-controller="ctrl1">
+                <div id="loader-big" style="display: none;"></div>
+                <div id="loader-small" style="display: none;"></div>
+                <h1>{{ title }}</h1>
+                <p class="name">{{ outroNome }}</p>
+            <hr>
 
 
-</body>
+                <div class="container" ng-repeat="users in user">
+
+                    <p class="name">{{ users.nome | uppercase }} {{ users.sobrenome | uppercase}}</p>
+                    <usuarios info="users"></usuarios>
+
+                </div>
+            <div id="envia" ng-click="alerta()">Enviar</div>
+
+
+    <div class="container">
+        
+        <form ng-submit="envia(cadastro)">
+         
+                <div class="row">
+                    <div class="input-field col s12">
+                    <input class="validate" id="first_name" type="text" name="nome" ng-model="cadastro.nome">
+                         <label for="first_name">Nome</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-field col s12">
+                    <input class="validate" id="email" type="email" name="email" ng-model="cadastro.email">
+                         <label for="email">Email</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" class="validate" type="password" name="senha" ng-model="cadastro.senha">
+                        <label for="password">Senha</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-field col s12">
+                        <button class="btn blue" type="submit" ng-disabled="!cadastro.nome || !cadastro.email">Envia</button>
+                    </div>
+                </div>
+          
+        </form>
+    </div>
+                <script src="js/app.js"></script>
+                <script src="js/appAngular.js"></script>
+                <script src="js/appController.js"></script>
+                <script src="js/appDirective.js"></script>
+                
+                
+        </div>
+
+    </body>
+</html>
